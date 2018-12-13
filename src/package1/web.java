@@ -25,18 +25,18 @@ public class web {
 	        driver.manage().window();
 	        
 	        WebElement firstname = driver.findElement( By.name("name"));
-	        String name = "anmol";
+	        String name = "mayank";
 	        firstname.sendKeys(name);   
 	        driver.manage().timeouts().implicitlyWait(60,TimeUnit.SECONDS);
 	        
-	        driver.findElement( By.name("id")).sendKeys("12345");
+	        driver.findElement( By.name("id")).sendKeys("3273");
 	        driver.manage().timeouts().implicitlyWait(60,TimeUnit.SECONDS);
 	        
-	        driver.findElement( By.name("ContactNumber")).sendKeys("01021021");
+	        driver.findElement( By.name("ContactNumber")).sendKeys("9555288238");
 	        driver.manage().timeouts().implicitlyWait(60,TimeUnit.SECONDS);
 	        	        
 	        driver.findElement(By.id("sss")).click();
-	        driver.manage().timeouts().implicitlyWait(60,TimeUnit.SECONDS);
+	        driver.manage().timeouts().implicitlyWait(100,TimeUnit.SECONDS);
 	        
 	        WebElement TxtBoxContent = driver.findElement(By.id("name"));
 	        String res[] = TxtBoxContent.getText().split(" ");
@@ -54,12 +54,6 @@ public class web {
 	        System.out.println("1. " + res[1] + "2. " + wed[1] + "3. " + sed[1]);
 	        
 	        
-		    
-	        
-
-	        
-
-
 	        
 	        
 	    }
